@@ -131,6 +131,7 @@ class TabIndexController: UIViewController,UICollectionViewDataSource,UICollecti
         for img in self.adv_scroll.subviews {
             img.removeFromSuperview()
         }
+        
         let count = self.ads.count
         adv_scroll.contentSize=CGSize(width:self.width*CGFloat(count), height: 0)
         self.adv_points = self.head_cell.viewWithTag(2) as! UIPageControl
