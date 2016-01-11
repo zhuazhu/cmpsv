@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9qR-pQ-rIm">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4D-Qu-Tr2">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="180"/>
+                </scrollView>
+                <pageControl opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="MnO-1e-3hK">
+                    <rect key="frame" x="180" y="150" width="39" height="37"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" red="0.0" green="0.6705882353" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8y8-e7-MO5">
+                    <rect key="frame" x="0.0" y="180" width="400" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="9JK-zz-pFA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.0" green="0.6705882352941176" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="x4D-Qu-Tr2" secondAttribute="trailing" id="59y-yZ-cMm"/>
+                <constraint firstItem="MnO-1e-3hK" firstAttribute="centerX" secondItem="9qR-pQ-rIm" secondAttribute="centerX" id="DEG-7K-2RE"/>
+                <constraint firstAttribute="trailing" secondItem="8y8-e7-MO5" secondAttribute="trailing" id="EwZ-Zp-Rch"/>
+                <constraint firstAttribute="bottom" secondItem="MnO-1e-3hK" secondAttribute="bottom" constant="-6" id="Mpm-BP-5xS"/>
+                <constraint firstAttribute="bottom" secondItem="x4D-Qu-Tr2" secondAttribute="bottom" constant="1" id="NSz-Ay-lm3"/>
+                <constraint firstAttribute="bottom" secondItem="8y8-e7-MO5" secondAttribute="bottom" id="WHC-7A-A5k"/>
+                <constraint firstItem="x4D-Qu-Tr2" firstAttribute="top" secondItem="9qR-pQ-rIm" secondAttribute="top" id="ahF-IJ-gIC"/>
+                <constraint firstItem="8y8-e7-MO5" firstAttribute="leading" secondItem="9qR-pQ-rIm" secondAttribute="leading" id="dq4-52-9ZW"/>
+                <constraint firstItem="x4D-Qu-Tr2" firstAttribute="leading" secondItem="9qR-pQ-rIm" secondAttribute="leading" id="kYy-8J-zfl"/>
+            </constraints>
+            <point key="canvasLocation" x="280" y="166.5"/>
+        </collectionReusableView>
+    </objects>
+</document>

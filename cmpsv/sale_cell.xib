@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="UWi-bN-Auf">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UWi-bN-Auf" id="sf5-c7-Uvf">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="209"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lanch" translatesAutoresizingMaskIntoConstraints="NO" id="gF1-bM-z2K">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="q8Q-YF-VBc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6S-On-tLV">
+                        <rect key="frame" x="8" y="8" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQd-Ma-aAt">
+                        <rect key="frame" x="0.0" y="200" width="400" height="9"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="topMargin" secondItem="z6S-On-tLV" secondAttribute="top" id="5rJ-2g-mfw"/>
+                    <constraint firstItem="gF1-bM-z2K" firstAttribute="leading" secondItem="sf5-c7-Uvf" secondAttribute="leadingMargin" constant="-8" id="FTc-lF-YwN"/>
+                    <constraint firstItem="FQd-Ma-aAt" firstAttribute="top" secondItem="z6S-On-tLV" secondAttribute="bottom" id="GRe-TG-aog"/>
+                    <constraint firstItem="FQd-Ma-aAt" firstAttribute="leading" secondItem="sf5-c7-Uvf" secondAttribute="leadingMargin" constant="-8" id="QaP-gh-mTa"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="z6S-On-tLV" secondAttribute="leading" id="XOE-cP-MZQ"/>
+                    <constraint firstItem="gF1-bM-z2K" firstAttribute="top" secondItem="sf5-c7-Uvf" secondAttribute="topMargin" constant="-8" id="aIX-1L-W3U"/>
+                    <constraint firstItem="FQd-Ma-aAt" firstAttribute="top" secondItem="z6S-On-tLV" secondAttribute="bottom" id="mXa-qC-y3u"/>
+                    <constraint firstItem="FQd-Ma-aAt" firstAttribute="top" secondItem="z6S-On-tLV" secondAttribute="bottom" id="mm2-l6-FZB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FQd-Ma-aAt" secondAttribute="bottom" constant="-8" id="nrn-TM-ans"/>
+                    <constraint firstItem="FQd-Ma-aAt" firstAttribute="top" secondItem="gF1-bM-z2K" secondAttribute="bottom" id="p7v-ch-Ac5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FQd-Ma-aAt" secondAttribute="trailing" constant="-8" id="qUd-Ev-DSF"/>
+                    <constraint firstItem="FQd-Ma-aAt" firstAttribute="top" secondItem="z6S-On-tLV" secondAttribute="bottom" id="sPH-jw-Ju3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gF1-bM-z2K" secondAttribute="trailing" constant="-8" id="tg5-wD-Sht"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gF1-bM-z2K" secondAttribute="bottom" constant="2" id="w6d-7h-Q93"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="w6d-7h-Q93"/>
+                        <exclude reference="GRe-TG-aog"/>
+                        <exclude reference="mXa-qC-y3u"/>
+                        <exclude reference="mm2-l6-FZB"/>
+                        <exclude reference="sPH-jw-Ju3"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="321" y="284"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="lanch" width="720" height="1280"/>
+    </resources>
+</document>
